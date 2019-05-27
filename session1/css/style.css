@@ -1,0 +1,21 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.white {
+	width: 100px;
+	height: 100px;
+	background-color: white;
+	border: 1px solid black;
+	float: left;
+}
+.black {
+	width: 100px;
+	height: 100px;
+	background-color: black;
+	border: 1px solid black;
+	float: left;
+}
+br {
+	line-height: 102px;
+}
