@@ -1,0 +1,17 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.element {
+	width: 20px;
+	height: 20px;
+	float: left;
+}
+.space {
+	width: 10px;
+	height: 20px;
+	float: left;
+}
+br {
+	line-height: 20px;
+}
