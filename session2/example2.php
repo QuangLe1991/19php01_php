@@ -26,6 +26,8 @@
 			}
 			if ($_REQUEST['phonenumber'] == '') {
 				$errPhoneNumber = 'Please input phone number';
+			} else if (!is_numeric($_REQUEST['phonenumber'])) {
+				$errPhoneNumber = 'Please input number not string';
 			} else {
 				$errPhoneNumber = '';
 			}
@@ -64,7 +66,7 @@
 			<p class="error"><?php echo $errEmail; ?></p>
 		</p>
 		<p>Phone Number :
-			<input type="number" name="phonenumber" value="<?php if (isset($phonenumber)) echo "$phonenumber"; ?>">
+			<input type="text" name="phonenumber" value="<?php if (isset($phonenumber)) echo "$phonenumber";?>">
 			<p class="error"><?php echo $errPhoneNumber; ?></p>
 		</p>
 		<p>Gender :
